@@ -1,0 +1,38 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+}
+
+.imagem-logo {
+  background-image: url("../../assets/logo.png");
+  background-repeat: no-repeat;
+  width: 351px;
+  height: 117px;
+}
+
+.participante {
+  z-index: 1;
+  width: 30rem;
+  // height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .cabecalho {
+      padding-top: 60px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .imagem-logo {
+      background-image: url("../../assets/logo-pequeno.png");
+      width: 235px;
+      height: 199px;
+  }
+
+  .participante {
+    z-index: 1;
+    width: 20rem;
+    // height: 100%;
+  }
+}
